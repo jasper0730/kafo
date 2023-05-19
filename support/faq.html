@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="網站描敘">
+  <meta name="keywords" content="網站關鍵字">
+  <meta name="format-detection" content="telephone=no">
+  <title>FAQ-KAFO</title>
+  <!-- icon -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/img/ico/apple-touch-icon-144.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/ico/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="../../assets/img/ico/favicon.ico">
+<!--共用-->
+  <!--font-awesome圖片字型-->
+  <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+  <!--banner-->
+  <link rel="stylesheet" href="../../assets/js/vendor/slick/slick.css"/>
+  <link rel="stylesheet" href="../../assets/js/vendor/slick/slick-theme.css"/>
+  <!-- lightbox -->
+  <link rel="stylesheet" href="../../assets/js/vendor/semanticwp/jquery.semanticwp-modal.min.css"/>
+<!--共用-->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+<!--非共用-->
+  <link rel="stylesheet" href="../../assets/css/support.css">
+<!--共用-->
+  <link rel="stylesheet" href="../../assets/css/responsible.css" media="all">
+  <script src="../../assets/js/vendor/jquery.1.11.3.min.js"></script>
+  <!--補瀏覽器前綴-->
+  <script src="../../assets/js/vendor/prefixfree.min.js"></script>
+</head>
+<body>
+<div class="wrapper page-faq">
+  <header></header>
+  <section class="banner support-banner support-faq-banner">
+    <h2 class="hideText disNone">Banner</h2>
+    <div class="bannerIND">
+      <div class="xsBGshow" data-small="../../upload/support/banner01.png" data-large="../../upload/support/banner01.png" style="background:url('../../upload/support/banner01.png') no-repeat center center; background-size:cover"><!--PC尺寸1440x490-->
+        <div class="indexTit">
+          <div class="inner">
+            <p class="banner-txt01">FAQ</p>
+            <p class="banner-txt02">THE LATEST DEVELOPMENTS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#faq" class="btn-down"></a>
+  </section>
+  <section id="faq" class="document-wrap faq-wrap">
+    <div class="container top-bar">
+      <div class="bread-crumbs">
+        <a href="./index.html">SUPPORT</a><span></span>
+        <a href="javascript:;">FAQ</a>
+      </div>
+      <a href="./index.html" class="btn-back">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x" aria-hidden="true"></i>
+          <i class="fa fa-angle-left fa-stack-1x" aria-hidden="true"></i>
+        </span>
+        BACK
+      </a>
+    </div>
+    <a class="support-anchor" href="#faq"><h2 class="move title">QUESTION AND ANSWER LIST</h2></a>
+    <div class="faq-inner">
+      <ul>
+        <li>
+          <div class="faq-title">
+            <span class="fontM">01</span>
+            <p>Can I get a taller z axis on my machine?</p>
+          </div>
+          <div class="faq-answer">
+            <p class="fontM">We get a lot of requests for taller z axes on our machines. While we can do some things to get you a taller z, there are several things to consider before going this route.</p>
+          </div>
+        </li>
+        <li>
+          <div class="faq-title">
+            <span class="fontM">02</span>
+            <p>Can I use hot rolled steel / aluminum for my linear guide rails?</p>
+          </div>
+          <div class="faq-answer">
+            <p class="fontM">We do not recommend using either hot rolled steel or aluminum with our linear motion systems. Both of these materials lack the tolerances and dimensional stability present in cold rolled steel, which is typically +0 / -0.004" in critical dimensions, whereas aluminum and hot rolled steel can often be +/- 0.030" in the same dimensions.</p>
+          </div>
+        </li>
+        <li>
+          <div class="faq-title">
+            <span class="fontM">03</span>
+            <p>Do you ship internationally? How much does it cost?</p>
+          </div>
+          <div class="faq-answer">
+            <p class="fontM">We definitely do! As much as possible, we ship everything in USPS flat rate priority mail boxes. This saves on customs duties for our customers.</p>
+          </div>
+        </li>
+        <li>
+          <div class="faq-title">
+            <span class="fontM">04</span>
+            <p>How accurate will my machine be with your parts?</p>
+          </div>
+          <div class="faq-answer">
+            <p class="fontM">This is a difficult question to answer with a single number, as the accuracy of a machine is dependent upon multiple factors, including the machine size and design, the components used, and the time and care taken during assembly.</p>
+          </div>
+        </li>
+        <li>
+          <div class="faq-title">
+            <span class="fontM">05</span>
+            <p>My computer doesn't have a parallel port. Can I just get a USB</p>
+          </div>
+          <div class="faq-answer">
+            <p class="fontM">This is a question we get fairly often, and unfortunately standard converters will not work. The reason is that both Mach 3 and EMC2 depend not only on the signals coming out of the parallel port, but also on the timing of those signals to control the motors. These programs are operating in an effectively "real time" environment to make sure that motions happen at the right speed from multiple axes. While USB is a much faster and newer protocol, USB converters do not maintain the timing associated with the step and direction signals, rendering them useless for CNC. The parallel port is really one of the only interfaces on PC's that allows for the level of direct control required for CNC.</p>
+          </div>
+        </li>
+        <li>
+          <div class="faq-title">
+            <span class="fontM">06</span>
+            <p>Which is better, a screw or rack and pinion drive?</p>
+          </div>
+          <div class="faq-answer">
+            <p class="fontM">The short answer is that both are good for different applications.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="home-footer"></footer>
+</div>
+<script>
+  // 引入header
+  $('header').load('../include/header.html');
+  // 引入footer
+  $('.home-footer').load('../include/footer.html');
+</script>
+<!--共用-->
+  <script src="../../assets/js/vendor/jquery.easings.min.js"></script>
+  <!--banner輪播-->
+  <script src="../../assets/js/vendor/slick/slick.min.js"></script>
+  <!-- lightbox -->
+  <script src="../../assets/js/vendor/semanticwp/jquery.semanticwp-modal.min.js"></script>
+  <!--動畫-->
+  <script src="../../assets/js/vendor/waypoints.min.js"></script>
+  <!--共用js-->
+  <script src="../../assets/js/main.js"></script>
+<!--非共用-->
+  <script src="../../assets/js/support.js"></script>
+</body>
+</html>
