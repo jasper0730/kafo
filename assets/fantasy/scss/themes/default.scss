@@ -1,0 +1,428 @@
+/***
+Default theme
+***/
+
+/***
+Reset and overrides  
+***/
+
+body {
+  background-color: #3d3d3d !important;
+}
+
+/***
+Page header
+***/
+
+.header {
+  filter: none !important;
+  background-image: none !important;
+  background-color: #212121 !important;
+  .btn-navbar {
+    background-color: #212121 !important;
+  }
+  .navbar-nav {
+    .dropdown-toggle:hover, .dropdown.open .dropdown-toggle {
+      background-color: #383838 !important;
+    }
+    li.dropdown .dropdown-toggle i {
+      color: #8a8a8a !important;
+    }
+  }
+  .search-form {
+    background-color: #000;
+    .form-control {
+      color: #999;
+      border: 0;
+      background-color: #000;
+      &::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #777;
+      }
+      &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #777;
+      }
+      &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #777;
+      }
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: #777;
+      }
+    }
+    .submit {
+      background: url(../../img/search-icon-light.png);
+    }
+  }
+  .hor-menu {
+    ul.nav li {
+      a {
+        color: #999;
+      }
+      &.open > a {
+        color: #fff;
+        background: #383838;
+      }
+      > a {
+        &:hover, &:focus {
+          color: #fff;
+          background: #383838;
+        }
+      }
+    }
+    .dropdown-menu li:hover > a {
+      color: #fff;
+      background: #e02222 !important;
+    }
+    ul.nav li {
+      &.active > a, &.current > a {
+        color: #fff;
+        background: #e02222 !important;
+        &:hover {
+          color: #fff;
+          background: #e02222 !important;
+        }
+      }
+    }
+    .dropdown-menu {
+      background: #383838;
+      li > a {
+        color: #999;
+      }
+    }
+    .hor-menu-search-form-toggler.off {
+      background: #383838 url(../../img/hor-menu-search-close.png) no-repeat center;
+    }
+    .search-form {
+      background: #383838;
+      form input {
+        color: #999;
+      }
+      .btn {
+        color: #999;
+        background: url(../../img/search-icon.png) no-repeat center;
+      }
+      form input {
+        &::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: #999;
+        }
+        &:-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: #999;
+        }
+        &::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: #999;
+        }
+        &:-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: #999;
+        }
+      }
+    }
+  }
+}
+
+/***
+Header Search
+***/
+
+/***
+Hor menu
+***/
+
+/***
+Mega Menu
+***/
+
+.mega-menu .mega-menu-submenu {
+  border-right: 1px solid #444;
+  li h3 {
+    color: #fff;
+  }
+}
+
+/***
+Page sidebar
+***/
+
+.page-sidebar {
+  background-color: #3d3d3d;
+}
+
+ul.page-sidebar-menu {
+  > li {
+    > a {
+      border-top: 1px solid #5c5c5c !important;
+      color: #ffffff !important;
+    }
+    &:last-child > a {
+      border-bottom: 1px solid transparent !important;
+    }
+    a i {
+      color: #969696;
+    }
+    &.open > a, > a:hover, &:hover > a {
+      background: #303030;
+    }
+    &.active > a {
+      background: #e02222 !important;
+      border-top-color: transparent !important;
+      color: #ffffff;
+      i {
+        color: #ffffff;
+      }
+    }
+    > ul.sub-menu {
+      > li {
+        &:first-child > a {
+          border-top: 0px !important;
+        }
+        &.active > a {
+          color: #ffffff !important;
+          background: #575757 !important;
+        }
+        > a:hover {
+          color: #ffffff !important;
+          background: #575757 !important;
+          background: #575757 !important;
+        }
+      }
+      li {
+        > ul.sub-menu > li {
+          &.active > a, > a:hover {
+            color: #ffffff !important;
+            background: #575757 !important;
+          }
+        }
+        &.open > a {
+          color: #ffffff !important;
+          background: #575757 !important;
+        }
+      }
+    }
+  }
+  li > ul.sub-menu > li > a {
+    color: #bdbdbd;
+  }
+  > li {
+    > {
+      a .arrow {
+        &:before, &.open:before {
+          color: #7d7d7d !important;
+        }
+      }
+      ul.sub-menu a .arrow {
+        &:before, &.open:before {
+          color: #707070 !important;
+        }
+      }
+      a > .arrow.open:before {
+        color: #8a8a8a !important;
+      }
+    }
+    &.active > a .arrow {
+      &:before, &.open:before {
+        color: #ffffff !important;
+      }
+    }
+  }
+}
+
+/* 3rd level sub menu */
+
+/* font color for all sub menu links*/
+
+/* menu arrows */
+
+/* sidebar search */
+
+.page-sidebar .sidebar-search {
+  input {
+    background-color: #242424 !important;
+    color: #7d7d7d;
+    &::-webkit-input-placeholder, &:-moz-placeholder, &:-ms-input-placeholder {
+      color: #7d7d7d !important;
+    }
+    background-color: #3d3d3d !important;
+    color: #bfbfbf !important;
+  }
+  .input-box {
+    border-bottom: 1px solid #7d7d7d !important;
+  }
+  .submit {
+    background-image: url(../../img/search-icon.png);
+  }
+}
+
+/***
+Sidebar toggler
+***/
+
+.sidebar-toggler {
+  background-image: url(../../img/sidebar-toggler.jpg);
+  background-color: #242424;
+}
+
+/* search box bg color on expanded */
+
+.page-sidebar-closed {
+  .page-sidebar .sidebar-search.open .form-container {
+    background-color: #3d3d3d !important;
+    .remove {
+      background-image: url("../../img/sidebar-search-close.png");
+    }
+  }
+  ul.page-sidebar-menu > li:hover .sub-menu {
+    background-color: #3d3d3d;
+  }
+}
+
+/* sub menu bg color on hover menu item */
+
+/***
+Footer 
+***/
+
+.footer {
+  .footer-inner {
+    color: #999999;
+  }
+  .footer-tools .go-top {
+    background-color: #4f4f4f;
+    &:hover {
+      opacity: 0.7;
+      filter: alpha(opacity = 70);
+    }
+    i {
+      color: #8a8a8a;
+    }
+  }
+}
+
+/***
+Footer Layouts (new in v1.3)
+***/
+/* begin:fixed footer */
+
+.page-footer-fixed .footer {
+  background-color: #242424;
+  .footer-inner {
+    color: #999999;
+  }
+  .footer-tools .go-top {
+    background-color: #4f4f4f;
+    i {
+      color: #8a8a8a;
+    }
+  }
+}
+
+/* end:fixed footer */
+/***
+Gritter Notifications 
+***/
+
+.gritter-top {
+  background: url(../../plugins/gritter/images/gritter.png) no-repeat left -30px !important;
+}
+
+.gritter-bottom {
+  background: url(../../plugins/gritter/images/gritter.png) no-repeat left bottom !important;
+}
+
+.gritter-item {
+  display: block;
+  background: url(../../plugins/gritter/images/gritter.png) no-repeat left -40px !important;
+}
+
+.gritter-close {
+  background: url(../../plugins/gritter/images/gritter.png) no-repeat left top !important;
+}
+
+.gritter-title {
+  text-shadow: none !important;
+  /* Not supported by IE :( */
+}
+
+/* for the light (white) version of the gritter notice */
+
+.gritter-light {
+  .gritter-item, .gritter-bottom, .gritter-top, .gritter-close {
+    background-image: url(../../plugins/gritter/images/gritter-light.png) !important;
+  }
+}
+
+.gritter-item-wrapper a {
+  color: #18a5ed;
+  &:hover {
+    color: #0b6694;
+  }
+}
+
+/* begin: boxed page */
+@media (min-width: 992px) {
+  .page-boxed {
+    background-color: #2e2e2e !important;
+    .page-container {
+      background-color: #3d3d3d;
+      border-left: 1px solid #5e5e5e;
+      border-bottom: 1px solid #5e5e5e;
+    }
+    &.page-sidebar-reversed .page-container {
+      border-left: 0;
+      border-right: 1px solid #5e5e5e;
+    }
+    &.page-sidebar-fixed .page-container {
+      border-left: 0;
+      border-bottom: 0;
+    }
+    &.page-sidebar-reversed.page-sidebar-fixed .page-container {
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+    }
+    &.page-sidebar-fixed .page-sidebar {
+      border-left: 1px solid #5e5e5e;
+    }
+    &.page-sidebar-reversed.page-sidebar-fixed .page-sidebar {
+      border-right: 1px solid #5e5e5e;
+      border-left: 0;
+    }
+    &.page-sidebar-fixed.page-footer-fixed .footer {
+      background-color: #2e2e2e !important;
+    }
+  }
+}
+
+/* end: boxed page */
+/***
+Landscape phone to portrait tablet
+***/
+@media (max-width: 991px) {
+  /***
+    page sidebar
+    ***/
+  .page-sidebar {
+    background-color: #292929 !important;
+  }
+  ul.page-sidebar-menu > li {
+    > a {
+      border-top: 1px solid #4a4a4a !important;
+    }
+    &:last-child > a {
+      border-bottom: 0 !important;
+    }
+  }
+  .page-sidebar .sidebar-search input {
+    background-color: #292929 !important;
+  }
+  ul.page-sidebar-menu > li {
+    &.open > a, > a:hover, &:hover > a {
+      background: #1e1e1e;
+    }
+  }
+}

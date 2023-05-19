@@ -1,0 +1,25 @@
+@media (max-width:1024px){
+  .privacy-section{
+    width: 90%;
+  }
+  .privacy-section {
+    padding: 65px 5%;
+  }
+}
+@media (max-width:768px){
+  .privacy-section{
+    width: 100%;
+    height: 100vh;
+  }
+  .privacy-section {
+    padding: 65px 7%;
+  }
+  .title-privacy {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:480px) {
+  .title-privacy {
+    font-size: 1.35rem; 
+  }
+}

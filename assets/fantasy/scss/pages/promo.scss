@@ -1,0 +1,89 @@
+/***
+Promo Page
+***/
+
+.page-content {
+  padding: 0;
+}
+
+.ie8 .page-content {
+  padding: 0 !important;
+}
+
+.promo-page {
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 650px;
+  h1, h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .btn.xlarge {
+    font-size: 22px;
+    padding: 7px 25px;
+    margin: 5px 0;
+  }
+  input.form-control {
+    background: #fff;
+  }
+  .block-transparent {
+    min-height: 350px;
+    padding: 50px 20px 30px 20px;
+  }
+  .block-grey {
+    min-height: 350px;
+    padding: 50px 20px 30px 20px;
+    background: #eeedf2;
+  }
+  .block-yellow {
+    min-height: 350px;
+    padding: 50px 20px 30px 20px;
+    background: #ffd800;
+  }
+  .block-footer {
+    padding: 30px 20px 30px 20px;
+    background: #eeedf2;
+  }
+}
+
+/*page row options*/
+
+/* carousel */
+
+.block-carousel {
+  .carousel-inner {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+  .carousel-control {
+    i {
+      display: none;
+      position: absolute;
+      top: 40%;
+    }
+    &.left i {
+      right: 30%;
+    }
+    &.right i {
+      left: 30%;
+    }
+  }
+  .carousel:hover .carousel-control i {
+    display: inline-block;
+  }
+  .carousel-indicators li {
+    background-color: #666;
+    &.active {
+      background-color: #333;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .block-carousel {
+    margin-top: -20px;
+    .carousel-inner {
+      padding-top: 20px;
+    }
+  }
+}

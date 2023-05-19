@@ -1,0 +1,412 @@
+/***
+Blue theme
+***/
+/***
+Reset and overrides  
+***/
+
+body {
+  background-color: #1570a6 !important;
+}
+
+/***
+Page header
+***/
+
+.header {
+  filter: none !important;
+  background-image: none !important;
+  background-color: #0f4e74 !important;
+  .btn-navbar {
+    background-color: #0f4e74 !important;
+  }
+  .navbar-nav {
+    .dropdown-toggle:hover, .dropdown.open .dropdown-toggle {
+      color: #fff;
+      background-color: #146a9d !important;
+    }
+    li.dropdown .dropdown-toggle i {
+      color: #68bbec !important;
+    }
+  }
+  .search-form {
+    background-color: #0B4263;
+    .form-control {
+      color: #68bbec;
+      border: 0;
+      background-color: #0B4263;
+    }
+    .submit {
+      background: url(../../img/search-icon-blue.png);
+    }
+  }
+  .hor-menu {
+    ul.nav li {
+      a {
+        color: #ccc;
+      }
+      &.open > a {
+        color: #fff;
+        background: #146a9d;
+      }
+      > a {
+        &:hover, &:focus {
+          color: #fff;
+          background: #146a9d;
+        }
+      }
+    }
+    .dropdown-menu li:hover > a {
+      color: #fff;
+      background: #e02222 !important;
+    }
+    ul.nav li {
+      &.active > a, &.current > a {
+        color: #fff;
+        background: #e02222 !important;
+        &:hover {
+          color: #fff;
+          background: #e02222 !important;
+        }
+      }
+    }
+    .dropdown-menu {
+      background: #146a9d;
+      li > a {
+        color: #ccc;
+      }
+    }
+    .hor-menu-search-form-toggler.off {
+      background: #146a9d url(../../img/hor-menu-search-close-white.png) no-repeat center;
+    }
+    .search-form {
+      background: #146a9d;
+      form input {
+        color: #ccc;
+      }
+      .btn {
+        color: #ccc;
+        background: url(../../img/search-icon-white.png) no-repeat center;
+      }
+      form input {
+        &::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: #ccc;
+        }
+        &:-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: #ccc;
+        }
+        &::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: #ccc;
+        }
+        &:-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: #ccc;
+        }
+      }
+    }
+  }
+}
+
+/***
+Header Search
+***/
+
+/***
+Hor menu
+***/
+
+/***
+Mega Menu
+***/
+
+.mega-menu .mega-menu-submenu {
+  border-right: 1px solid #1876AD;
+  li h3 {
+    color: #fff;
+  }
+}
+
+/***
+Page sidebar
+***/
+
+.page-sidebar {
+  background-color: #1570a6;
+}
+
+ul.page-sidebar-menu {
+  > li {
+    > a {
+      border-top: 1px solid #1c95dc !important;
+      color: #ffffff !important;
+    }
+    &:last-child > a {
+      border-bottom: 1px solid transparent !important;
+    }
+    a i {
+      color: #7fc5ef;
+    }
+    &.open > a, > a:hover, &:hover > a {
+      background: #12618f;
+    }
+    &.active > a {
+      background: #cc1d1d !important;
+      border-top-color: transparent !important;
+      color: #ffffff;
+      i {
+        color: #ffffff;
+      }
+    }
+    > ul.sub-menu {
+      > li {
+        &:first-child > a {
+          border-top: 0px !important;
+        }
+        &.active > a {
+          color: #ffffff !important;
+          background: #1b8fd3 !important;
+        }
+        > a:hover {
+          color: #ffffff !important;
+          background: #1b8fd3 !important;
+          background: #1b8fd3 !important;
+        }
+      }
+      li {
+        > ul.sub-menu > li {
+          &.active > a, > a:hover {
+            color: #ffffff !important;
+            background: #1b8fd3 !important;
+          }
+        }
+        &.open > a {
+          color: #ffffff !important;
+          background: #1b8fd3 !important;
+        }
+      }
+    }
+  }
+  li > ul.sub-menu > li > a {
+    color: #c3e4f7;
+  }
+  > li {
+    > {
+      a .arrow {
+        &:before, &.open:before {
+          color: #51b1e9 !important;
+        }
+      }
+      ul.sub-menu a .arrow {
+        &:before, &.open:before {
+          color: #3ba6e6 !important;
+        }
+      }
+      a > .arrow.open:before {
+        color: #68bbec !important;
+      }
+    }
+    &.active > a .arrow {
+      &:before, &.open:before {
+        color: #ffffff !important;
+      }
+    }
+  }
+}
+
+/* 3rd level sub menu */
+
+/* font color for all sub menu links*/
+
+/* menu arrows */
+
+/* sidebar search */
+
+.page-sidebar .sidebar-search {
+  input {
+    background-color: #0f5179 !important;
+    color: #51b1e9;
+    &::-webkit-input-placeholder, &:-moz-placeholder, &:-ms-input-placeholder {
+      color: #51b1e9 !important;
+    }
+    background-color: #1570a6 !important;
+    color: #bfbfbf !important;
+  }
+  .input-box {
+    border-bottom: 1px solid #51b1e9 !important;
+  }
+  .submit {
+    background-image: url(../../img/search-icon-blue.png);
+  }
+}
+
+/***
+Sidebar toggler
+***/
+
+.sidebar-toggler {
+  background-image: url(../../img/sidebar-toggler-blue.jpg);
+  background-color: #0f5179;
+}
+
+/* search box bg color on expanded */
+
+.page-sidebar-closed {
+  .page-sidebar .sidebar-search.open .form-container {
+    background-color: #1570a6 !important;
+    .remove {
+      background-image: url("../../img/sidebar-search-close-blue.png");
+    }
+  }
+  ul.page-sidebar-menu > li:hover .sub-menu {
+    background-color: #1570a6;
+  }
+}
+
+/* sub menu bg color on hover menu item */
+
+/***
+Footer 
+***/
+
+.footer {
+  .footer-inner {
+    color: #68bbec;
+  }
+  .footer-tools .go-top {
+    background-color: #1985c6;
+    &:hover {
+      opacity: 0.7;
+      filter: alpha(opacity = 70);
+    }
+    i {
+      color: #68bbec;
+    }
+  }
+}
+
+/***
+Footer Layouts (new in v1.3)
+***/
+/* begin:fixed footer */
+
+.page-footer-fixed .footer {
+  background-color: #0f5179;
+  .footer-inner {
+    color: #68bbec;
+  }
+  .footer-tools .go-top {
+    background-color: #1985c6;
+    i {
+      color: #68bbec;
+    }
+  }
+}
+
+/* end:fixed footer */
+/***
+Gritter Notifications 
+***/
+
+.gritter-top {
+  background: url(../../plugins/gritter/images/gritter-blue.png) no-repeat left -30px !important;
+}
+
+.gritter-bottom {
+  background: url(../../plugins/gritter/images/gritter-blue.png) no-repeat left bottom !important;
+}
+
+.gritter-item {
+  display: block;
+  background: url(../../plugins/gritter/images/gritter-blue.png) no-repeat left -40px !important;
+}
+
+.gritter-close {
+  background: url(../../plugins/gritter/images/gritter-blue.png) no-repeat left top !important;
+}
+
+.gritter-title {
+  text-shadow: none !important;
+  /* Not supported by IE :( */
+}
+
+/* for the light (white) version of the gritter notice */
+
+.gritter-light {
+  .gritter-item, .gritter-bottom, .gritter-top, .gritter-close {
+    background-image: url(../../plugins/gritter/images/gritter-light.png) !important;
+  }
+}
+
+.gritter-item-wrapper a {
+  color: #18a5ed;
+  &:hover {
+    color: #0b6694;
+  }
+}
+
+/* begin: boxed page */
+@media (min-width: 992px) {
+  .page-boxed {
+    background-color: #125e8b !important;
+    .page-container {
+      background-color: #1570a6;
+      border-left: 1px solid #1c98e1;
+      border-bottom: 1px solid #1c98e1;
+    }
+    &.page-sidebar-reversed .page-container {
+      border-left: 0;
+      border-right: 1px solid #1c98e1;
+    }
+    &.page-sidebar-fixed .page-container {
+      border-left: 0;
+      border-bottom: 0;
+    }
+    &.page-sidebar-reversed.page-sidebar-fixed .page-container {
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+    }
+    &.page-sidebar-fixed .page-sidebar {
+      border-left: 1px solid #1c98e1;
+    }
+    &.page-sidebar-reversed.page-sidebar-fixed .page-sidebar {
+      border-right: 1px solid #1c98e1;
+      border-left: 0;
+    }
+    &.page-sidebar-fixed.page-footer-fixed .footer {
+      background-color: #125e8b !important;
+    }
+  }
+}
+
+/* end: boxed page */
+/***
+Landscape phone to portrait tablet
+***/
+@media (max-width: 991px) {
+  /***
+    page sidebar
+    ***/
+  .page-sidebar {
+    background-color: #105882 !important;
+  }
+  ul.page-sidebar-menu > li {
+    > a {
+      border-top: 1px solid #187fbd !important;
+    }
+    &:last-child > a {
+      border-bottom: 0 !important;
+    }
+  }
+  .page-sidebar .sidebar-search input {
+    background-color: #105882 !important;
+  }
+  ul.page-sidebar-menu > li {
+    &.open > a, > a:hover, &:hover > a {
+      background: #0e4b70;
+    }
+  }
+}

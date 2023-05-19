@@ -1,0 +1,25 @@
+.noProductItemDiv { width: 100%; height: 300px; border: none; text-align: center; line-height: 300px; font-size: 1em; font-weight: 100; }
+.noSelectItemDiv { width: 100%; height: 80px; border: none; text-align: center; line-height: 80px; font-size: .9em; font-weight: 100;  }
+.noProductItemDiv > span { animation: maskload 1s  infinite ease; }
+
+.proCont > div.product_explan,
+.proCont > div.after_sale_service,
+.proCont > div.try_report,
+.proCont > div.size_compare { display: none; }
+
+.pageBox ul li.on a{color:#FFF; background:#000; border-color: transparent}
+
+
+.lightSide{ width:100%; height:100%; background: #fff; position:fixed; left:0; top:0; z-index:999999; display:none;}
+
+.viewMoreBtn { direction: ltr; }
+.viewMoreBtn.turnLoading {  animation: maskload 1s  infinite ease; }
+
+.cursorPointer { cursor: pointer; }
+
+
+.nav_firstBlock ul, .nav_secondBlock ul { min-width: 60%; }
+
+.wrapCategorySelectOptions > div { min-width: 120px; }
+
+.advs { margin-bottom: .5%; }

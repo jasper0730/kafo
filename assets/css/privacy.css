@@ -1,0 +1,203 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../font/icomoon/icomoon.eot?z4gn3e');
+  src:  url('../font/icomoon/icomoon.eot?z4gn3e#iefix') format('embedded-opentype'),
+    url('../font/icomoon/icomoon.ttf?z4gn3e') format('truetype'),
+    url('../font/icomoon/icomoon.woff?z4gn3e') format('woff'),
+    url('../font/icomoon/icomoon.svg?z4gn3e#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('../font/Century%20Gothic/CenturyGothic.eot');
+    src: url('../font/Century%20Gothic/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+	       url('../font/Century%20Gothic/CenturyGothic.woff2') format('woff2'),
+	       url('../font/Century%20Gothic/CenturyGothic.woff') format('woff'),
+	       url('../font/Century%20Gothic/CenturyGothic.ttf') format('truetypproductSmalle'),
+	       url('../font/Century%20Gothic/CenturyGothic.svg#CenturyGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  margin: 0;
+}
+.swpmodal-container_i {
+  background-color: #fff;
+}
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+.privacy-wrap {
+  position: relative;
+  background-color: #fff;
+}
+.privacy {
+    position: absolute;
+    top: -195px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.privacy-line { padding-bottom: 0; }
+.privacy-line.move::before { height: 220px; }
+.privacy-line::before { margin: 0 auto 15px; }
+
+/*privacy-header 按鈕*/
+.red-line{
+  width: 100%;
+  padding-top: 150px;
+  position: absolute;
+  top: -10px;
+}
+@keyframes fadeInLine {
+  from { opacity: 0; height: 0px}
+}
+.red-line::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto 20px;
+  background-color: #E60012;
+  width: 5px;
+  height: 150px;
+  animation: fadeInLine 1s ease;
+  z-index: 999999
+}
+.leave-privacy{
+  width: 35px;
+  height: 35px;
+  border: solid 2px #000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  font-size: 22px;
+  font-family: Arial;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: 0.5s ease;
+}
+.leave-privacy:hover{
+  background-color: #000;
+  color: #fff;
+}
+/*privacy-section 文章區*/
+.privacy-section{
+  width: 90%;
+  height: 75vh;
+  max-width: 940px;
+  margin: auto;
+  padding: 65px 4%;
+  background-color: #fff;
+  position: relative;
+}
+.title-privacy{
+  font-weight: bold;
+  font-size: 1.875rem;
+  width: 100%;
+  text-align: center;
+  font-family: 'CenturyGothic';
+}
+.main-article{
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  font-weight: 100;
+}
+.inside-title,
+.inside-web,
+.inside-info{
+  width: 94%;
+  margin: auto;
+  padding-right: 1rem;
+}
+.inside-title{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.inside-web{
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 100;
+  word-wrap: break-word;
+  line-height: 1.5rem;
+}
+.inside-info{
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+  color: #333333;
+}
+/*scroll bar*/
+.mCSB_inside > .mCSB_container{
+  margin-right: 0;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+  width: 6px;
+  border-radius: 0;
+  background-color: #333333;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail{
+  width: 3px;
+  background-color: #cccccc;
+
+}
+
+/*scroll bar*/
+.scrollbar-inner > .scroll-element.scroll-y {
+  width: 6px;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_outer,
+.scrollbar-inner > .scroll-element .scroll-element_track,
+.scrollbar-inner > .scroll-element .scroll-bar {
+  border-radius: 0;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_track,
+.scrollbar-inner > .scroll-element .scroll-bar {
+  opacity: 1;
+}
+
+.scrollbar-inner > .scroll-element .scroll-bar,
+.scrollbar-inner > .scroll-element .scroll-bar:hover,
+.scrollbar-inner > .scroll-element:hover .scroll-bar {
+  background-color: #333333;
+  width: 6px;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_track {
+  background-color: #cccccc;
+  width: 3px;
+  left: 1.5px;
+}
+
+
+
+/**/

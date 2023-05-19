@@ -1,0 +1,44 @@
+/*** 
+Email Template Page 
+***/
+
+.mail-template {
+  ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+  }
+  li {
+    float: left;
+    padding: 0;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+    list-style: none;
+    border: solid 2px #fff;
+    &:hover {
+      border: solid 2px #aaa;
+    }
+    a {
+      display: inline-block;
+      padding: 16px 25px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &.color-black {
+      background: #1f1f1f;
+    }
+    &.color-darkblue {
+      background: #1570a6;
+    }
+    &.color-lightblue {
+      background: #4aabf9;
+    }
+    &.color-red {
+      background: #eb4d41;
+    }
+    &.color-green {
+      background: #28b779;
+    }
+  }
+}

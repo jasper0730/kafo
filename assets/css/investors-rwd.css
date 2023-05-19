@@ -1,0 +1,202 @@
+/*此文件是從 investor 的股東專區開始編寫 ， 所以如果要找 investor 的財務資訊下的RWD資料，必需去responsible.css找*/
+/*responsible.css擁有網站 about kafo , products , support , investor(財務資訊),的RWD資料*/
+@media (max-width:1280px) {
+  .shareholder-year>span:first-of-type, .shareholder-class>span:first-of-type, .shareholder-line { display: none; }
+  .shareholder-select>a:after, .shareholder-select>a:after { right: 44%; top: -20%; }
+  .shareholder-select>a.open:after, .shareholder-select>a.open:after { top: -44%; }
+  .shareholder-year, .shareholder-class { width: 150px; }
+  .contact-pipe-group { width: 71%; }
+}
+@media (max-width:1250px) {
+  .director-date { width: 21%; }
+  .director-doc { width: 79%; }
+  .director-info::before { width: 21%; }
+  .management-group::before { width: 30%; }
+  .management-group { width: 61%; }
+  .contact-pipe-group { width: 71%; }
+}
+@media (max-width:1150px) {
+  .director-date { width: 22%; }
+  .director-doc { width: 78%; }
+  .director-info::before { width: 22%; }
+  .management-group::before { width: 30%; }
+  .management-group { width: 63%; }
+  .contact-pipe-group { width: 71%; }
+}
+@media (max-width:1050px) {
+  .director-date { width: 23%; }
+  .director-doc { width: 77%; }
+  .director-info::before { width: 23%; }
+  .management-group::before { width: 30%; }
+  .management-group { width: 64%; }
+  .contact-pipe-group { width: 71%; }
+  .contact-pipe-table tbody tr td { padding-left: 4rem; }
+  .contact-pipe-table tbody tr td.shareholder-title { padding-left: 3.5rem; }
+  .contact-pipe-table thead tr th:nth-child(2) { width: 27%; }
+  .contact-pipe-table thead tr th:nth-child(3) { width: 55%; }
+}
+@media (max-width:1024px) {
+  .faq-title>span { width: 70px; min-width: auto;}
+  .faq-answer>p { margin-left: 70px; }
+  .faq-title>p, .faq-answer>p { padding-left: 15px; }
+}
+@media (max-width:1000px) {
+  .director-date { width: 24%; }
+  .director-doc { width: 76%; }
+  .director-info::before { width: 24%; }
+  .management-group::before { width: 30%; }
+  .management-group { width: 65%; }
+  .contact-pipe-group { width: 71%; }
+}
+@media (max-width:950px) {
+  .director-date { width: 25%; }
+  .director-doc { width: 75%; }
+  .director-info::before { width: 25%; }
+  .management-group::before { width: 30%; }
+  .management-group { width: 66%; }
+  .contact-pipe-group { width: 71%; }
+  .audit-name { width: 26%; }
+  .audit-doc { width: 74%; }
+  .contact-pipe-table tbody tr td { padding-left: 3.5rem; }
+  .contact-pipe-table tbody tr td.shareholder-title { padding-left: 3rem; }
+  .contact-pipe-table thead tr th:nth-child(2) { width: 28%; }
+  .contact-pipe-table thead tr th:nth-child(3) { width: 54%; }
+}
+@media (max-width:930px) {
+  /*.director-revenue-year { width: 300px; }*/
+  .trade-securities, .open-information { width: 25%; }
+}
+@media (max-width:900px) {
+  .management-group { width: 72%; }
+  .management-group::before { display: none; }
+  .director-name, .management-business { width: 100%; text-align: left; padding: 0 10%; padding-left: 6.5%; }
+  .director-name { margin-bottom: -1%; }
+  .management-group { border-top: solid 4px #e60012; width: 72%; }
+  .director-border { border-top: }
+  .speech-name { padding-left: 2rem; }
+  .contact-phone, .contact-mail { padding-left: 2rem; }
+  .contact-speech, .contact-info { padding-top: 1rem; }
+  .contact-info { padding-top: 0.8rem; }
+  .contact-group { min-width: 572px; }
+  .contact-speech { width: 32%; }
+  .contact-info { width: 68%; }
+  .contact-pipe-speech, .contact-pipe-info { float: none; }
+  .contact-pipe-info { width: 100%; padding-top: 0; }
+  .contact-pipe-speech { width: 100%; }
+  .info-section>p { padding: 0; padding-left: 2rem; }
+  .contact-name { padding-left: 2rem; }
+  .contact-pipe-table tbody tr td { padding-left: 3rem; }
+  .contact-pipe-table tbody tr td.shareholder-title { padding-left: 2.5rem; }
+  .contact-pipe-table thead tr th:nth-child(2) { padding-left: 2.5rem; }
+}
+@media (max-width:845px) {
+  .table-type1 thead tr th.shareholder-title,.table-type1 tbody tr td.shareholder-title { /*text-align: right; padding: 0em;*/ padding-left: 3rem; }
+}
+@media (min-width:831px) and (max-width:845px) {
+  .table-type1 thead tr th.shareholder-title, .table-type1 tbody tr td.shareholder-title { text-align: left; }
+}
+@media (max-width:830px) {
+  .revenue-shareholder { width: 70%;}
+  .shareholder-table { width: 100%; }
+  .director-revenue-year { left: 0px; right: auto; }
+  .director-info { width: 100%; padding-top: 2rem; border-top: solid 4px #e60012; }
+  .director-info::before { display: none; }
+  .management-group { width: 72%; border-top: solid 4px #e60012; padding-top: 0; }
+  .director-article { margin-bottom: 2rem; }
+  .director-article::before { border: none; }
+  .director-date, .director-doc { float: none; margin: auto;}
+  .director-date { width: auto; text-align: left; padding-left: 42px; color: #000; }
+  .director-doc { width: 100%; padding-top: 0.8rem; padding-bottom: 1rem; }
+  .director-doc>li { line-height: 1.35rem; }
+  .director-name, .management-business { width: 100%; text-align: left; padding: 0 2rem; }
+  .management-article { margin-bottom: 0; }
+  .table-type1 thead tr th.shareholder-title,.table-type1 tbody tr td.shareholder-title { text-align: right; padding: 1.25rem; }
+  .table-type1 tbody tr td.org_download { text-align: center; }
+  .org_download>.management-click { margin-left: 96%; }
+  .table-type1 thead tr th.org_title, .table-type1 tbody tr td.org_title { border-bottom: solid 1px #dddddd; }
+  .contact-group { min-width: 572px; }
+  .contact-pipe-table thead tr th.shareholder-title, .contact-pipe-table tbody tr td.shareholder-title { text-align: left; }
+  .contact-pipe-table thead tr th:nth-child(3), .contact-pipe-table tbody tr td:nth-child(3) { width: 100%; padding: 1.25rem; }
+  td.contact-pipe-title:before { position: relative; display: block; width: 100%; padding: 0; margin-bottom: 1rem; }
+  .custom-type li { word-wrap: break-word; line-height: 1.25rem; }
+}
+@media (max-width:768px) {
+  .public-info { margin-bottom: 3rem; }
+  .stock-price a span:first-of-type { font-size: 3.125rem; }
+  .stock-price { width: 100%; }
+  .investor-word { text-align: justify; }
+}
+@media (max-width:700px) {
+  .contact-group { min-width: auto; width: 72%;}
+  .contact-speech, .contact-info { width: 100%; float: none; }
+  .contact-speech, .contact-info { width: 100%; }
+  .contact-speech { padding-bottom: 0rem; }
+}
+@media (max-width:680px) {
+  .revenue-shareholder { width: 76%;}
+  .trade-securities, .open-information { width: 35%; }
+  .public-info { width: 70%; }
+  .faq-title>span { width: 50px; }
+  .faq-answer>p { margin-left: 50px; }
+  .faq-title>p, .faq-answer>p { padding-left: 10px; margin-top: -2px; padding-top: 0; }
+}
+@media (max-width:600px) {
+  .revenue-shareholder { width: 80%;}
+  .stock-price a span:first-of-type { font-size: 3rem; }
+  .stock-price.for-stock a span {
+    margin-bottom: 0;
+  }
+  .stock-price.for-stock a {
+    margin-bottom: 1.7em;
+  }
+  .org_download>.management-click { margin-left: 94%; }
+}
+@media (max-width:560px) {
+  .revenue-shareholder { width: 84%;}
+  .management-group { width: 100%; }
+  .contact-group, .contact-pipe-group { width: 90%; }
+  .revenue-info>span.title-big:first-of-type { font-size: 1.5rem; }
+}
+@media (max-width:500px) {
+  .revenue-shareholder { width: 88%;}
+  .faq-title>p { width: 80%; }
+}
+@media (min-width:420px) and (max-width:490px) {
+  .table-type1 { width: 100%; }
+  .trade-securities, .open-information { width: 45%; }
+  .public-info { width: 90%; }
+}
+@media (max-width:480px) {
+  .stock-price { margin-bottom: 0.5rem; }
+  .stock-time>p { display: block; margin-bottom: 0.5rem; }
+  .stock-time>p:nth-child(2),.stock-time>p:nth-child(3) { display: inline;}
+  .revenue-shareholder { width: 92%; }
+  .org_download>.management-click { margin-left: 92%; }
+  .contact-phone>span, .contact-mail>span { width: 100%; float: left; margin-bottom: 0.325rem; }
+  .speech-name { margin-bottom: 0; }
+  .info-section>p>span { width: 100%; float: left; margin-bottom: 0.325rem; }
+}
+@media (max-width:420px) {
+  .revenue-shareholder { width: 96%; }
+  .table-type1 { width: 100%; }
+  .trade-securities, .open-information { width: 45%; }
+  .public-info { width: 90%; }
+  /*.stock-price a span:first-of-type { font-size: 2.25rem; }*/
+}
+@media (max-width:380px) {
+  .revenue-shareholder { width: 100%; }
+  .shareholder-year, .shareholder-class, .revenue-class-select, .revenue-class-select>a { width: 125px; }
+  /*.stock-price a span:first-of-type { font-size: 1.9rem; }*/
+  .revenue-year>span:first-of-type, .revenue-class>span:first-of-type { left: 27px; }
+  .director-doc { padding: 1rem 2.5rem; padding-right: 2rem; }
+  .director-date { padding-left: 26px; }
+  .contact-group { word-break: break-all; }
+  .contact-phone, .contact-mail { padding-right: 2rem; }
+  .faq-title>p { width: 76%; }
+}
+@media (max-width:330px) {
+  .director-year-select>a, .director-year-select>a { font-size: 0.875rem; }
+}
+/*@media (max-width:320px) {
+  .director-doc { padding: 1rem 2.5rem; }
+}*/

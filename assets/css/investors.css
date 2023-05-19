@@ -1,0 +1,316 @@
+/*btn act effect*//* Rectangle Out */
+.hvr-rectangle-out { display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent; position: relative; background: #e1e1e1; -webkit-transition-property: color; transition-property: color; -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+.hvr-rectangle-out:before { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: #e70012; -webkit-transform: scale(0); transform: scale(0);
+ -webkit-transition-property: transform; transition-property: transform; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active { color: white; }
+.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before { -webkit-transform: scale(1); transform: scale(1); }
+/**/
+.investors-banner { height: 60%; }
+.investors-banner .bannerIND:before { content: ''; position: absolute; display: block; width: 100%; height: 100%; background-color: rgba(0,0,0,.15); }
+.banner-txt01 { visibility: hidden; font-size: 3rem; font-weight: bold; margin: auto; }
+.banner-txt02 { visibility: hidden; font-size: 1.125rem; font-weight: bold; font-family: '微軟正黑體'; margin: auto; }
+.investors-banner .indexTit .inner { vertical-align: top; padding-top: 10%; }
+/*menu-center*/
+.menu-btn { display: none; position: relative; height: 40px; line-height: 40px; color: #FFF; text-align: center; }
+.menu-btn:after { content: "\f107"; display: inline-block; position: absolute; right: 3em; font-family: FontAwesome; font-size: 1em; }
+.menu-btn.open:after { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+.menu-center { z-index: 1; position: absolute; top: 42%; width: 100%; background: rgba(0, 0, 0, .8); }
+.menu-box { width: 100%; height: 40px; line-height: 40px; text-align: center; }
+.menu-center.menuFixed { position: fixed; top: 0; z-index: 2; }
+.menu-box>li { display: inline-block; margin-left: -5px; transition: .5s ease; }
+.menu-box>li:hover { background-color: #e60012; }
+.menu-box>li>a { color: #FFF; display: inline-block; padding-left: 1em; padding-right: 1em; }
+.menu-btn>span::before { content: '/'; display: inline; padding-left: 10px; padding-right: 10px; }
+.open .navbar-main { background-color: #e60012; }
+.navsub { visibility: hidden; opacity: 0; position: absolute; left: 0; top: 100%; background-color: #e6e6e6; width: 100%; transition: .5s ease; }
+.navsub>li { display: inline-block; font-size: .875rem; color: #808080; font-family: '微軟正黑體'; padding-left: 1em; padding-right: 1em; margin-left: -5px; }
+.navsub>li:hover a { color: #1a1a1a; }
+.navsub>li a { display: inline-block; }
+.navsub-chose a { color: #1a1a1a; }
+.open .navsub { opacity: 1; visibility: visible; }
+.investors-wrap, .revenue-wrap { position: relative; top: -50px; }
+.investors-wrap .container { max-width: 1080px; width: 100%; }
+.investors-wrap .container>a { visibility: hidden; display: block; margin: auto; width: 200px; }
+.investors-title { display: block; font-size: 3.75rem; font-weight: 500; }
+.taipei-time { font-size: .75rem; font-family: '微軟正黑體'; color: rgba(0,0,0,.6); margin: 0; }
+.investors-info { visibility: hidden; text-align: center; width: 90%; max-width: 660px; margin: 0 auto 6em; }
+.investors-info .title { display: block; font-size: 2.25rem; font-weight: bold; font-family: '微軟正黑體'; padding-bottom: .6em; }
+.investors-info p { font-size: .9375rem; color: #666; font-family: '微軟正黑體'; margin: 2em 0; }
+.investors-main { width: 100%; margin-bottom: 10em; }
+.investors-list { visibility: hidden; display: table; width: 100%; margin: 0 auto 8em; }
+.investors-list:hover .investors-list-img:before { opacity: 1; }
+.investors-list:hover .investors-list-img div { opacity: 1; }
+.investors-list-img, .investors-list-txt { display: table-cell; vertical-align: bottom; }
+.investors-list-img { position: relative; width: 520px; }
+.investors-list-img:before { opacity: 0; content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.6); transition: .5s ease; }
+.investors-list-img div { opacity: 0; position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: table; margin: auto; transition: .5s ease; width: 50%; height: 50%; text-align: center; }
+.investors-list-img:after { content: ''; z-index: -1; position: absolute; top: 40px; left: 50px; display: block; width: 100%; height: 100%; background-color: #f0eee9; }
+.investors-list-txt { padding-left: 8em; padding-bottom: 2em; }
+.investors-list-txt .cn { display: block; margin-bottom: .5em; font-size: 1.375rem; font-weight: bold; font-family: '微軟正黑體'; }
+.investors-list-txt .en { display: block; margin-bottom: 2em; color: #b2b2b2; font-size: .875rem; }
+.btn-investors { margin-left: -10px; }
+.btn-investors li { display: inline-block; margin-bottom: 1em; border-right: 2px solid #e60012; }
+.btn-investors li:last-of-type { border: 0; }
+.btn-investors li a { display: block; font-size: .875rem; color: #4c4c4c; font-family: '微軟正黑體'; padding-left: 10px; padding-right: 10px; }
+.btn-investors li a:hover { color: #000; }
+.investors-list:nth-child(2n+2) { direction: rtl; }
+.investors-list:nth-child(2n+2) .investors-list-img:after { left: auto; right: 50px; }
+.investors-list:nth-child(2n+2) .investors-list-txt { padding-left: 0; padding-right: 8em; text-align: right; }
+.investors-list:nth-child(2n+2) .btn-investors { direction: ltr; }
+.investors-list:nth-child(2n+2) .btn-investors li:last-of-type a { padding-right: 0; }
+/*revenue*/
+.revenue-wrap>a { display: block; margin: auto; width: 200px; }
+.revenue-wrap>.inner { width: 90%; max-width: 1130px; margin: auto; text-align: center; }
+.revenue-info { margin-bottom: 4em; text-align: center; }
+.revenue-info>span:first-of-type { font-size: 1.875rem; font-weight: bold; color: #000; font-family: '微軟正黑體'; display: block; margin-bottom: .5em; }
+.revenue-info>span:last-of-type { font-size: .9375rem; color: #b2b2b2; text-transform: uppercase; }
+.revenue-info>span.sh-revenue-info {
+  font-size: 1.875rem; font-weight: bold; color: #000; font-family: '微軟正黑體'; display: block; margin-bottom: .5em;
+}
+.revenue-year,.shareholder-class { position: relative; text-align: center; width: 300px; margin: auto; height: 32px; line-height: 32px; margin-bottom: 2em; }
+.revenue-year>span:first-of-type,.shareholder-class>span:first-of-type { font-size: .875rem; color: #000; font-family: '微軟正黑體'; display: inline-block; position: absolute; left: 36px; }
+.revenue-year-line { display: inline-block; width: 1px; height: 30px; background-color: #e60012; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; }
+.revenue-shareholder { width: 60%; margin: auto; }
+.revenue-shareholder>.revenue-year { float: left; }
+.revenue-shareholder>.shareholder-class { float: right; }
+.revenue-year { z-index: 1; }  /*ex:.revenue-year { z-index: 2; }然後.revenue-class { z-index: 1; } */
+.shareholder-class { z-index: 1; } /*讓.revenue-class比.revenue-year後面，.revenue-year的下拉選單才可以蓋住.revenue-class*/
+/*select*/
+.revenue-year-select,.revenue-class-select { display: inline-block; vertical-align: middle; position: absolute; right: 0; z-index: 1; }
+.revenue-year-select>a,.revenue-class-select>a { width: 150px; text-align: center; display: inline-block; position: relative; top: -2px; right: 2px; font-size: 0.875rem; color: #808080; }
+.revenue-year-select>a:after,
+.revenue-class-select>a:after {
+  position: absolute;
+  right: 0;
+  top: 39%;
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: transparent solid;
+  border-width: 7px;
+  border-top-color: #e60012;
+}
+.revenue-year-select>a.open:after,
+.revenue-class-select>a.open:after {
+  border-bottom-color: #e60012;
+  border-top-color: transparent;
+  top: 15%;
+}
+.revenue-year-select ul,
+.revenue-class-select ul {
+  display: none;
+  background-color: #191919;
+  color: rgba(255, 255, 255, .3);
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.revenue-year-select ul li a,
+.revenue-class-select ul li a {
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 0.75rem;
+}
+.revenue-year-select ul li a:hover, .revenue-year-select .chose,.revenue-class-select ul li a:hover, .revenue-class-select .chose {
+  color: rgba(255, 255, 255, 1);
+}
+
+.revenue-unit { font-size: .8125rem; font-family: '微軟正黑體'; color: rgba(0,0,0,.8); display: block; text-align: right; margin-bottom: 1em; }
+.revenue-unit.mg-LR {
+  width: 72%;
+  margin: 0 auto 1em;
+}
+@media (max-width:830px) {
+  .revenue-unit.mg-LR {
+    width: 100%;
+  }
+}
+/*table*/
+.table-type1 { width: 100%; margin: auto; margin-bottom: 10em; }
+.table-type1 thead tr th { background-color: #E60012; border-right: 1px solid #e5e5e5; font-size: .8125rem; color: #FFF; padding: 8px 0; }
+.table-type1 tbody tr td { padding: 1.5em 0; border-right: 1px solid #e5e5e5; font-size: 0.8125rem; text-align: center; color: #595959; }
+.table-type1 tbody tr td:last-of-type { border: 0; }
+.table-type1 tbody tr td:first-of-type { color: #000; }
+@media (max-width:830px) {
+  .table-type1 tbody tr td:first-of-type {
+    padding: 1.5em 0;
+  }
+}
+.table-type1 tbody tr { border-bottom: 1px solid rgba(126,126,126,.7); }
+.table-type1 tbody tr:hover { background-color: #efefef; }
+.table-type1 tbody tr td .icon-download { margin-left: .5em; vertical-align: middle; }
+.table-type1 tbody tr td a:hover { color: #e60012; }
+.table-type1 tbody tr td a { display: inline-block; margin-bottom: .7em; }
+.table-type1 tbody tr td a:last-of-type { margin-bottom: 0; }
+.shareholder-table { width: 72%; margin: auto; margin-bottom: 10em; }
+.shareholder-table thead tr th:nth-child(1) { width: 17%; }
+.shareholder-table thead tr th:nth-child(3) { width: 21%; }
+.shareholder-table thead tr th.shareholder-title,.shareholder-table tbody tr td.shareholder-title { text-align: left; padding: 0rem; padding-left: 3.5rem; padding-right: 2.5rem;}
+.shareholder-table tbody tr td.shareholder-title { font-size: 0.875rem; letter-spacing: 0.5px; }
+.shareholder-table.main-list thead tr th:nth-child(1) { width: 50%; }
+.shareholder-table.main-list thead tr th:nth-child(2) { width: 25%; }
+.shareholder-table.main-list thead tr th:nth-child(3) { width: 25%; }
+.shareholder-table.main-list thead tr th.shareholder-title, .shareholder-table tbody tr td.shareholder-title { padding: 0rem 2.5rem; }
+.shareholder-table.main-list thead tr th.shareholder-title,.shareholder-table tbody tr td.shareholder-title { text-align: center }
+.regulation-table { width: 69%; }
+.regulation-table thead tr th:nth-child(1) { width: 21%; }
+.respon-table { width: 69%; }
+.respon-table thead tr th:nth-child(1) { width: 21%; }
+.conference-table { width: 69%; }
+.conference-table thead tr th:nth-child(3) { width: 22%; }
+.stock-price {
+  width: 90%;
+  max-width: 750px;
+  border-bottom: 8px solid #e5e5e5;
+  margin: auto;
+  margin-bottom: 0.875rem;
+}
+.stock-price a { display: block; float: left; text-align: center; margin-bottom: 2em; }
+.stock-price a:nth-child(2) { border-left: 1px solid #e60012; }
+.stock-price a span:first-of-type { font-size: 3.75rem; color: #000; display: block; margin-bottom: 0.5rem; }
+.stock-price a span:last-of-type { font-size: .875rem; color: #808080; display: block; }
+.stock-price.for-stock {
+  width: 90%;
+  max-width: 750px;
+  border-bottom: 8px solid #e5e5e5;
+  margin: auto;
+  margin-bottom: 0.875rem;
+
+  display: flex;
+  justify-content: center;
+}
+.stock-price.for-stock a span {
+  font-size: 3.75rem;
+  color: #000;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.stock-time { text-align: center; font-size: 0.875rem; margin-bottom: 3.5rem; }
+.stock-time>p { margin: 0 7px; display: inline-block; line-height: 100%; }
+.stock-time>p:nth-child(3) { color: #e70012; cursor: pointer; }
+.public-info { width: 50%; margin: auto; text-align: left; font-size: 0.925rem; font-family: '微軟正黑體'; color: #808080; margin-bottom: 2rem; }
+.trade-securities,.open-information { display: inline-block; width: 20%; padding: 15px 0px; margin: auto; font-size: 0.8rem; letter-spacing: 1px; margin-bottom: 7rem;}
+.trade-securities { background-color: #424242; color: #fff; }
+.open-information { background-color: #b5b5b5; color: #000; }
+
+/*director*/
+.director-info { width: 83%; height: 100%; border-top: solid 4px #a6a6a6; margin: auto; }
+.audit-info { width: 80%; }
+.director-info::before { content: ''; width: 20%; display: block; border-top: solid 4px #e60012; position: relative; top: -4px; }
+.director-article { border-bottom: solid 1px #a6a6a6; font-size: 0.875rem; font-family: '微軟正黑體'; }
+.director-date { width: 20%; height: 100%; float: left; position: relative; text-align: left; font-weight: bold;  font-size: 0.875rem; padding-left: 1.25rem; padding-right: 1rem; color: #000; }
+.director-doc { width: 80%; float: left; margin: 1rem 0 ; padding: 0 3.5rem; text-align: left; line-height: 1rem; font-size: 0.8125rem; }
+.director-doc>li { margin-bottom: 0.5rem; line-height: 1.125rem; color: #595959; }
+.audit-doc>li { line-height: 1.35rem; }
+
+.management-info { margin-bottom: 3rem; }
+.management-set { font-size: 1.5rem; font-weight: bold; color: #656565; margin: auto; margin-bottom: 1.5rem; }
+.management-group { width: 60%; margin-bottom: 4.5rem; }
+.management-group::before { content: ''; width: 30%; display: block; border-top: solid 4px #e60012; position: relative; top: -4px; }
+.director-name, .management-business { float: left; line-height: 160%; margin-bottom: 1.5rem; margin-top: 0.65rem; text-align: left; }
+.director-name { width: 30%; font-size: 1rem; font-weight: bold; padding-left: 2rem; padding-right: 0.5rem; }
+.management-business { width: 70%; text-align: left; padding-left: 3rem; padding-right: 2rem; color: #595959; }
+.management-table { width: 70%; }
+.management-table thead tr th:nth-child(1) { width: 20%; }
+.management-table thead tr th:nth-child(3) { width: 20%; }
+.management-click { transform: rotate(270deg); }
+.no-rotate { transform: rotate(0deg); }
+.audit-name { margin-top: 1.2rem; }
+.audit-doc { margin-bottom: 1.5rem; margin-top: 1.25rem;}
+.table-type1 thead tr th.org_title, .table-type1 tbody tr td.org_title { border: none; }
+.table-type1 tbody tr td.org_title { color: #595959; }
+.org_btn { text-align: left; }
+.table-type1 tbody tr td.director-num { font-size: 0.75%; }
+.investor-word { width: 50%; max-width: 500px; min-width: 230px; text-align: center; font-size: 0.925rem; font-family: '微軟正黑體'; color: #606060; margin: auto; margin-bottom: 1.875rem; line-height: 170%; }
+.investor-word-link { color: #e60012; cursor: pointer; margin: 0 0.3rem; }
+.contact-speech, .contact-info { float: left; padding: 1rem 0;  padding-bottom: 1.5rem; }
+.contact-speech { width: 30%; text-align: left; }
+.contact-info { width: 70%; padding-top: 0.8rem; }
+.speech-man { padding-left: 2rem; color: #808080; }
+.speech-name { float: none; width: 100%; margin-bottom: 0; margin-top: 0.2rem; }
+.contact-info>.management-business { width: 100%; }
+.contact-phone, .contact-mail, .info-section>p { margin: 0; text-align: left; padding-left: 3rem; margin-bottom: 0.2rem; font-weight: bold; font-size: 0.8125rem; color: #333333; }
+.contact-phone>span, .contact-mail>span { font-weight: normal; color: #595959; }
+.contact-group { min-width: 572px; margin-bottom: 2rem; width: 56%; }
+.contact-word { font-size: 0.95rem; margin-bottom: 1.3rem; text-align: left; }
+.contact-btn { min-width: 226px; }
+.contact-pipe-group { margin-bottom: 2rem; width: 71%; }
+.contact-pipe-group::before { width: 32%; }
+.contact-pipe-speech, .contact-pipe-info { float: left; padding-top: 0.6rem; padding-bottom: 1.5rem; }
+.contact-pipe-speech { width: 32%; text-align: left; }
+.contact-pipe-info { width: 68%; padding-top: 1.25rem; }
+.info-section { margin-bottom: 0.9rem; }
+.info-section>p { font-weight: normal; font-size: 0.875rem; padding-left: 2.5rem; color: #595959; }
+.info-section>p>span { color: #595959; }
+.contact-name { float: none; width: 100%; margin-bottom: 0; font-size: 0.875rem; padding-left: 1.25rem; padding-right: 1.75rem; }
+.contact-pipe-word { font-size: 0.95rem; margin-bottom: 1.3rem; max-width: 660px; width: 60%; }
+.communication-div { margin: 6.5rem 0; }
+.contact-pipe-table { width: 100%; max-width: 970px; }
+.contact-pipe-table thead tr th:nth-child(1) { width: 18%; }
+.contact-pipe-table thead tr th:nth-child(2) { width: 25%; }
+.contact-pipe-table thead tr th:nth-child(3),
+.contact-pipe-table tbody tr td:nth-child(3) { width: 57%; text-align: left; padding-left: 3.5rem;}
+.contact-pipe-table tbody tr td { padding-left: 4.5rem; text-align: left; vertical-align:text-top; }
+.contact-pipe-table tbody tr td.shareholder-title { padding: 1.3rem; padding-left: 3.5rem; padding-bottom: 1.60rem; }
+.contact-pipe-table tbody tr td.shareholder-title { font-size: 0.8125rem; }
+.contact-pipe-table tbody tr td:nth-child(3),
+.contact-pipe-table tbody tr td:nth-child(1) { font-size: 0.875rem; }
+
+/*利害關係人專區底下的表格 ul li 的-(減)號*/
+.custom-type { list-style-type: none; }
+.custom-type li { position: relative; padding-left: 10px; margin-bottom: 0.6rem; }
+.custom-type li::before { content: '-'; position: absolute; left: 2px; }
+
+/*faq*/
+.faq-wrap>.support-anchor { position: absolute; top: 0; left: 0; right: 0; display: block; width: 200px; margin: auto; }
+.faq-inner { width: 90%; max-width: 780px; margin: auto; }
+.faq-inner>ul>li { border-bottom: 1px solid rgba(204,204,204,.7); }
+.faq-title { padding-top: 1rem; padding-bottom: 1rem; cursor: pointer; }
+.faq-title>span { position: relative; float: left; font-size: 1.75rem; color: #000; display: inline-block; width: 94px; text-align: center; vertical-align: top; font-weight: bold; transition: .5s ease; }
+.faq-title>p { display: inline-block; font-weight: bold; font-size: 0.875rem; color: #000; margin: 0; vertical-align: top; padding-top: 0.3%; padding-left: 20px; padding-right: 5%; width: 85%; transition: .5s ease; }
+.faq-answer>p { float: left; margin-left: 94px; font-size: .875rem; color: #4c4c4c; letter-spacing: .05em; display: inline-block; vertical-align: top; margin-top: 0; padding-left: 20px; padding-right: 5%; }
+.faq-inner ul li:first-of-type { border-top: 4px solid #a6a6a6; }
+.faq-inner ul li:first-of-type .faq-title>span:before { content: ''; display: block; position: absolute; top: -20px; left: 0; width: 100%; min-width: 50px; height: 4px; background-color: #e60012; }
+.faq-inner ul li:hover .faq-title>span, .faq-inner ul li:hover .faq-title>p { color: #e60012; }
+.faq-title.open>span, .faq-title.open>p { color: #e60012; }
+.login-in>p { font-size: 1.375rem; font-weight: bold; color: #333; text-align: right; margin: 0; padding-left: 30%; padding-right: 11%; padding-top: 24%; text-transform: uppercase; }
+.login-in { height: 343px; display: none; }
+.faq-title, .faq-answer { text-align: left; font-family: '微軟正黑體'; }
+
+
+/**/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../assets/font/cross/icomoon.eot?m7h306');
+  src:  url('../../assets/font/cross/icomoon.eot?m7h306#iefix') format('embedded-opentype'),
+    url('../../assets/font/cross/icomoon.ttf?m7h306') format('truetype'),
+    url('../../assets/font/cross/icomoon.woff?m7h306') format('woff'),
+    url('../../assets/font/cross/icomoon.svg?m7h306#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cross:before {
+  content: "\e900";
+}
+
+/**/

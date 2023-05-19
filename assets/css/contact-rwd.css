@@ -1,0 +1,372 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+}
+
+/*-----------------------------------------------------------*/
+@media (max-width: 1280px) {
+
+}
+@media (max-width: 1240px) {
+  .company-info>h2{
+    width: 90%;
+    margin-top: 35px;
+    margin-bottom: 2.2rem;
+  }
+  .company-info>.info-group{
+    width: 90%;
+  }
+}
+@media (max-width: 1100px) {
+  .company-info>h2{
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  .company-info>.info-group{
+    width: 90%;
+  }
+  /*map-join*/
+  .map-join{
+    width: 260px;
+    margin: auto;
+  }
+  .btn-down{
+    bottom: 5.5rem;
+  }
+}
+@media (max-width: 960px) {
+  .company-info>h2{
+    margin-top: 45px;
+  }
+  .info-address,.info-phone,.info-mail{
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 915px){
+  .btn-down{
+    bottom: 5.5rem;
+  }
+}
+@media (max-width: 871px) {
+  .company-box{
+    position: relative;
+    width: 100%;
+    background-color: #e6e6e6;
+  }
+  .button-group{
+    display: block;
+  }
+  .icon-circle-left:before{
+    /*content: "\ea44";
+    display: block;
+    font-family: 'btn_prev_next';
+    font-size: 2rem;*/
+    content: '\f104';
+    display: block;
+    margin: auto;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 50%;
+    font-family: FontAwesome;
+  }
+  .icon-circle-right:before{
+    /*content: "\ea42";
+    display: block;
+    font-family: 'btn_prev_next';
+    font-size: 2rem;*/
+    content: '\f105';
+    display: block;
+    margin: auto;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 50%;
+    font-family: FontAwesome;
+  }
+  .prev-button,.next-button{
+    position: absolute;
+    top: 40%;
+    z-index: 9;
+    cursor: pointer;
+  }
+  .prev-button{
+    left: 0.2rem;
+  }
+  .next-button{
+    right: 0.2rem;
+  }
+  .prev-button>img{
+    width: 35px;
+    height: 35px;
+  }
+  .next-button>img{
+    width: 35px;
+    height: 35px;
+  }
+  .company-info{
+    width: 49.9%;
+  }
+  .company-info>h2{
+    width: 75%;
+    margin-top: 35px;
+    margin-bottom: 1.6rem;
+    font-size: 1rem;
+  }
+  .info-address, .info-phone, .info-mail {
+    font-size: 0.85rem;
+  }
+  .company-info>.info-group{
+    width: 75%;
+  }
+  /*map-join*/
+  .map-join{
+    width: 310px;
+    margin: auto;
+  }
+}
+@media (max-width: 710px) {
+  .company-info{
+    width: 49.9%;
+  }
+  .company-info>h2{
+    width: 75%;
+    margin-top: 35px;
+    margin-bottom: 1.6rem;
+    font-size: 1rem;
+  }
+  .info-address, .info-phone, .info-mail {
+    font-size: 0.85rem;
+  }
+  .company-info>.info-group{
+    width: 75%;
+  }
+}
+
+/*手機*/
+@media (max-width: 656px) {
+  .company-box{
+    position: relative;
+    width: 100%;
+    background-color: #e6e6e6;
+  }
+  .button-group{
+    display: block;
+  }
+  .prev-button,.next-button{
+    position: absolute;
+    top: 40%;
+    z-index: 9;
+    cursor: pointer;
+  }
+  .prev-button{
+    left: 0.3rem;
+  }
+  .next-button{
+    right: 0.3rem;
+  }
+  /*company-info*/
+  .company-info{
+    width: 100%;
+    text-align: left;
+  }
+  .company-info>h2{
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+  }
+  .company-info>.info-group{
+    width: 70%;
+    font-size: 0.75rem;
+  }
+  /*contact-us*/
+  .contact-us{
+    width: 96%;
+  }
+  .contact-us>p{
+    padding-left: 33px;
+  }
+  ul.input-group>li{
+    margin-bottom: 1rem;
+  }
+  .name{
+    padding-top: 1rem;
+  }
+  .contact-dropdown{
+    width: 100%;
+    height: auto;
+    padding-left: 24px;
+    margin-bottom: 10px;
+    line-height: 39px;
+  }
+  .subject{
+    height: 45px;
+  }
+  .contact-dropdown::after{
+    top: 20px;
+  }
+  .contact-dropdown.open::after{
+    top: 10px;
+  }
+  .comments>textarea{
+    padding-left: 33px;
+    padding-top: 0;
+    width: 96%;
+    margin-top: -15px;
+  }
+  .code{
+    position: relative;
+  }
+  .code>.contact-input{
+    width: 80%;
+  }
+  .code>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .scroll-textarea{
+    width: 92%;
+    margin-left: 31px;
+  }
+  label.contact-label{
+    width: 80%;
+    line-height: 0px;
+    margin-bottom: 0.8rem;
+  }
+  input.contact-input{
+    width: 100%;
+    height: auto;
+    padding-left: 33px;
+    margin-bottom: 10px;
+  }
+  .send-clear{
+    width: 90%;
+  }
+}
+@media (max-width: 500px){
+  .prev-button>img{
+    width: 30px;
+    height: 30px;
+  }
+  .next-button>img{
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-height: 420px){
+  .contact-banner { height: 100%; }
+}
+@media (max-width: 420px) {
+  .prev-button,.next-button{
+    top: 39%;
+  }
+  .prev-button{
+    left: 0.2rem;
+  }
+  .next-button{
+    right: 0.2rem;
+  }
+  .company-info>h2{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 2.5rem;
+    padding: 0 40px;
+  }
+  .company-info>.info-group{
+    width: 100%;
+    padding: 0 40px;
+  }
+  /*contact-us*/
+  .contact-us>p{
+  font-size: 0.75rem;
+  }
+  .scroll-textarea{
+    width: 88%;
+    margin-left: 31px;
+  }
+}
+@media (max-width: 380px){
+  .btn-down{
+    bottom: 4.5rem;
+  }
+  .prev-button{
+    left: 0rem;
+  }
+  .next-button{
+    right: 0rem;
+  }
+  .company-info>h2{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 2.75rem;
+    padding: 0 25px;
+  }
+  .company-info>.info-group{
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+@media (max-width: 320px) {
+  /*contact-us*/
+  .contact-us>h2{
+    font-size: 1.25rem;
+  }
+  .contact-us>p{
+  font-size: 0.75rem;
+  padding-left: 0;
+  letter-spacing: 0.5px;
+  text-align: center;
+  }
+  .contact-dropdown{
+    padding-left: 13px;
+    font-size: 0.8rem;
+  }
+  .contact-dropdown::after{
+    top: 15px;
+  }
+  .contact-dropdown.open::after{
+    top: 5px;
+  }
+  .comments>textarea{
+    padding-left: 21px;
+    font-size: 0.8rem;
+  }
+  .code>img {
+    position: absolute;
+    top: -1px;
+    right: 0;
+  }
+  label.contact-label{
+    margin-left: 21px;
+    font-size: 0.8rem;
+  }
+  input.contact-input{
+    padding-left: 21px;
+    font-size: 0.8rem;
+  }
+}

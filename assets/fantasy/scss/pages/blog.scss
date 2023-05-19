@@ -1,0 +1,144 @@
+/***
+Blog Page
+***/
+
+/*--Block Article--*/
+
+.blog-page {
+  padding-bottom: 20px;
+  h1 {
+    margin-bottom: 20px;
+  }
+  h2 a {
+    color: #000;
+    &:hover {
+      color: #0d638f;
+      text-decoration: none;
+    }
+  }
+  hr {
+    margin-top: 30px !important;
+  }
+  .article-block {
+    padding-bottom: 20px;
+  }
+  .news-img img {
+    margin-top: 9px;
+  }
+  .blog-tag-data {
+    ul {
+      margin-bottom: 5px;
+    }
+    li {
+      padding: 0;
+      i {
+        color: #78cff8;
+      }
+      a {
+        padding: 0;
+        color: #555;
+        margin-right: 8px;
+      }
+    }
+    margin-bottom: 10px;
+    ul.blog-tags a {
+      background: #eee;
+      padding: 1px 4px;
+      margin: 0 4px 4px 0;
+      display: inline-block;
+      &:hover {
+        background: #ddd;
+        text-decoration: none;
+      }
+    }
+    .blog-tag-data-inner {
+      text-align: right;
+    }
+    img {
+      margin-bottom: 12px;
+    }
+  }
+  .blog-article {
+    padding-bottom: 20px;
+    h3, h2, h1, h4 {
+      margin-top: 0;
+    }
+  }
+}
+
+/*--Block Sidebar--*/
+
+.blog-sidebar h2 {
+  font-size: 38.5px;
+  margin-bottom: 20px;
+}
+
+/*Twitter block*/
+
+.blog-twitter-block {
+  padding: 5px;
+  position: relative;
+  margin-bottom: 10px;
+  border-right: solid 2px #ddd;
+  &:hover {
+    background: #fafafa;
+    border-color: #35aa47;
+  }
+  a {
+    color: #4d90fe;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  span {
+    color: #555;
+    display: block;
+    font-size: 12px;
+  }
+  i.blog-twiiter-icon {
+    color: #eee;
+    right: 10px;
+    bottom: 10px;
+    font-size: 30px;
+    position: absolute;
+  }
+}
+
+/***
+Blog & News Item Page
+***/
+/*--Media Object--*/
+
+.blog-page {
+  .media img {
+    height: 54px;
+    position: relative;
+    top: 3px;
+    width: 54px;
+  }
+  h4.media-heading {
+    position: relative;
+    span {
+      color: #777777;
+      font-size: 12px;
+      position: absolute;
+      right: 0;
+      top: 3px;
+      a {
+        color: #78cff8;
+      }
+    }
+  }
+  .post-comment .color-red {
+    color: #f00;
+  }
+}
+
+/*Post Comment*/
+
+/*For Responsive*/
+@media (max-width: 768px) {
+  .blog-page .blog-tag-data .blog-tag-data-inner {
+    text-align: left;
+  }
+}
