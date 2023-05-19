@@ -56,21 +56,20 @@
         <p class="sub-class">{{ $page_set['title'] }}</p>
       </div>
     </div>
-    <!-- 頁籤 -->
-    <div class="tab-block">
-      <div class="tab-container">
-        <div class="tab">設計</div>
-        <div class="tab">電控</div>
-        <div class="tab">電裝</div>
-        <div class="tab">製造</div>
-
-
-      </div>
-    </div>
     <!-- 表格 -->
     {{-- <!-- 無資料請加上 .noData --> --}}
     <div class="document-download manual {{ count($page_set['files'])>0?'':'noData' }}">
-      <table>
+      <!-- 頁籤 -->
+      <div class="tab-block">
+        <div class="tab-container">
+          <!-- data-tab 與 data-tab-target 需設定對應的值 -->
+          <div class="tab" data-tab="設計">設計</div>
+          <div class="tab" data-tab="電控">電控</div>
+          <div class="tab" data-tab="電裝">電裝</div>
+          <div class="tab" data-tab="製造">製造</div>
+        </div>
+      </div>
+      <table data-tab-target="電裝">
         <thead>
           <tr>
             <th>標題</th>
@@ -153,3 +152,4 @@
       @stop
  
 @stop
+
