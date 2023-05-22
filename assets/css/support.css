@@ -1168,6 +1168,10 @@
   width: 100%;
 }
 
+table[data-tab-target] {
+  display: none;
+}
+
 @media (max-width: 680px) {
   .manual.document-download {
   margin: 170px auto 7em;

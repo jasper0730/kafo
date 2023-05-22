@@ -69,7 +69,7 @@
           <div class="tab" data-tab="製造">製造</div>
         </div>
       </div>
-      <table data-tab-target="電裝">
+      <table data-tab-target="設計">
         <thead>
           <tr>
             <th>標題</th>
