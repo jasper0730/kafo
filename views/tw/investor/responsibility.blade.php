@@ -56,8 +56,8 @@
     </a>
     <div class="inner">
       <div class="revenue-info">
-        <span>企業社會責任</span>
-        <span>CORPORATE SOCIAL RESPONSIBILITY</span>
+        <span>公司治理運作情形</span>
+        <span>Corporate Governance Operation</span>
       </div>
       <table class="table-type1 shareholder-table respon-table">
         <thead>

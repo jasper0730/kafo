@@ -798,7 +798,7 @@
 } */
 /* 2023.05.19 Jasper */
 .manual.document-download {
-  margin: 145px auto 7em;
+  margin: 165px auto 7em;
 }
 .manual.document-download table {
   max-width: calc(100% - 40px);
@@ -822,7 +822,7 @@
   width: 100%;
   max-width: 1138px;
   /* max-width: calc(100% - 40px); */
-  display: none;
+  /* display: none; */
   margin: auto;
   text-align: center;
   background: #f4f4f4;
@@ -1168,7 +1168,7 @@
   width: 100%;
 }
 
-table[data-tab-target] {
+div[data-tab-target] {
   display: none;
 }
 
